@@ -1,0 +1,156 @@
+/*
+	HUG Theme
+	Author: zaki | HUG
+	Version 0.0.1
+*/
+/* googleFont */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Font */
+/*
+	Responsive Theme
+	Author: azaki
+	Version 0.0.1
+*/
+/* Large Devices */
+@media only screen and (min-width: 1401px) {
+  .container {
+    width: 1390px; }
+
+  .container-fluid {
+    padding-right: 55px;
+    padding-left: 55px; } }
+@media only screen and (min-width: 768px) {
+  .grayStrp {
+    position: relative; }
+    .grayStrp::before {
+      background-color: #EEEEEE;
+      height: 70%;
+      width: 100%;
+      top: 15%;
+      bottom: 15%;
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: 0; } }
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 1270px; }
+
+  .container-fluid {
+    padding-right: 55px;
+    padding-left: 55px; } }
+@media only screen and (min-width: 1701px) {
+  html {
+    font-size: 16px; } }
+/* 1024 Devices */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 14px; }
+
+  .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px; }
+
+  .mainCover {
+    overflow: hidden; }
+    .mainCover img {
+      height: 50vh;
+      width: auto;
+      max-width: inherit;
+      transform: translate(0%); }
+
+  .globally h2 {
+    padding: .3rem 1rem .3rem 9rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    left: -120px;
+    z-index: 1; }
+
+  #states .col-md-4 {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  footer .row div.col-md-1 {
+    margin: 10px 0; }
+
+  .blocks .col-md-8::before {
+    display: none; }
+
+  .rateRange {
+    padding: 15px 0; }
+
+  .rateNumbers {
+    margin-top: 1rem; }
+
+  .globally h2 {
+    font-size: 2rem; } }
+/* Portrait and Landscape */
+/* Portrait and Landscape */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .blocks .col-md-4 {
+    text-align: center;
+    font-weight: 700; }
+
+  .chartContainer {
+    width: 100%;
+    overflow-y: scroll; }
+
+  html {
+    font-size: 14px; }
+
+  .worldWide {
+    width: 150px; }
+
+  .globally p {
+    padding: 0 0 1rem 0.7rem; }
+
+  .caption h4.sub-title {
+    font-size: 1.813rem; }
+
+  .caption .page-title {
+    font-size: 2.813rem; }
+
+  .mainCover {
+    overflow: hidden; }
+    .mainCover img {
+      height: 50vh;
+      width: auto;
+      max-width: inherit;
+      transform: translate(-50%);
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+      -o-transform: translate(-50%); }
+
+  .chartContainer svg.chart, .chartContainer svg.chart2 {
+    overflow-x: auto; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 414px) {
+  section.footer-top a {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden; } }
+/* Custom, iPhone Retina */
+@media (min-device-width: 1024px) and (max-device-width: 1024px) {
+  .globally h2 {
+    font-size: 1.8rem; }
+  .globally p {
+    padding: 0 0 1rem 0rem; }
+
+  .grayStrp .col-md-4 {
+    flex: 0 0 25%;
+    max-width: 25%; } }
+
+/*# sourceMappingURL=responsive.css.map */
