@@ -262,7 +262,7 @@ path {
             left: 0;
             bottom: 0;
             width: 100%;
-            height: 140px;
+            height: 100px;
 
         }
         svg {
@@ -277,5 +277,10 @@ path {
         line {
             stroke: rgb(0, 0, 0) !important;
         }
+    }
+}
+.apexcharts-xaxis {
+    line {
+        display: none;
     }
 }

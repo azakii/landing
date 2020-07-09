@@ -1963,7 +1963,7 @@ path {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 140px; }
+    height: 100px; }
   #HorizontalChart .apexcharts-canvas svg, #HorizontalChart2 .apexcharts-canvas svg {
     z-index: 2;
     position: relative; }
@@ -1971,6 +1971,9 @@ path {
   display: none; }
 #HorizontalChart .apexcharts-yaxis.apexcharts-xaxis-inversed line, #HorizontalChart2 .apexcharts-yaxis.apexcharts-xaxis-inversed line {
   stroke: black !important; }
+
+.apexcharts-xaxis line {
+  display: none; }
 
 /*
 	Responsive Theme

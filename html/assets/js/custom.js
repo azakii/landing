@@ -41,7 +41,14 @@ var options = {
 
 legend: {show: false},
 yaxis: {show: false},
-grid: {show: false},
+grid: {show: false, 
+padding: {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0
+    },  
+  },
   xaxis: {
     categories: ['31 May', '30 Apr', '31 Mar', '29 Feb', '20 Dec', '1 jan', '29 sep', '29 July', '29 Nov', '29 Jun'],
   },
@@ -117,12 +124,15 @@ grid: {show: false},
   }],
     chart: {
     type: 'bar',
-    height: 350
+    height: 250
   },
   plotOptions: {
     bar: {
       horizontal: true,
       barHeight: 25,
+    },
+    track: {
+        margin: 0, 
     }
   },
   
@@ -151,7 +161,7 @@ var options = {
   }],
     chart: {
     type: 'bar',
-    height: 350
+    height: 250
   },
   plotOptions: {
     bar: {
@@ -179,12 +189,14 @@ var options = {
 
 
 
-//init AOS
+
+
+//////////////////////////////////////// init AOS
 
 AOS.init();
 
 
-// number animtaion
+//////////////////////////////////////// number animtaion
 $(window).scroll(startCounter);
 function startCounter() {
     if ($(window).scrollTop() > 400) {
