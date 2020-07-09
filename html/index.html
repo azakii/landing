@@ -211,73 +211,7 @@
         <h3 class="text-blue text-left">Today <strong> versus week updates</strong> <br>
           on COVID-19 cases in Egypt </h3>
           <div class="border p-3">
-            <ul>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    New confirmed cases
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 12.02%);"></div>
-                      <div class="rate ml-2 red">12.02%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    New Deaths
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 93.75%);"></div>
-                      <div class="rate ml-2 red">93.75%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    Total cured cases
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 34.75%);"></div>
-                      <div class="rate ml-2 red">34.75%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    Total confirmed cases
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 31.75%);"></div>
-                      <div class="rate ml-2 red">31.75%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    Total Deaths
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 23.75%);"></div>
-                      <div class="rate ml-2 red">23.75%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <div id="HorizontalChart2"></div>
           </div>
       </div>
   </div>
@@ -286,73 +220,7 @@
         <h3 class="text-blue text-left">Today <strong> versus week updates</strong> <br>
           on COVID-19 cases in Egypt </h3>
           <div class="border p-3">
-            <ul>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    New confirmed cases
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 12.02%);"></div>
-                      <div class="rate ml-2 red">12.02%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    New Deaths
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 93.75%);"></div>
-                      <div class="rate ml-2 red">93.75%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    Total cured cases
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 34.53%);"></div>
-                      <div class="rate ml-2 red">34.53%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    Total confirmed cases
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 31.97%);"></div>
-                      <div class="rate ml-2 red">31.97%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-4">
-                    Total Deaths
-                  </div>
-                  <div class="col-md-8">
-                    <div class="d-flex rateRange">
-                      <div class="ratepercentage bg-dark" style="width:calc(100% - 23.87%);"></div>
-                      <div class="rate ml-2 red">23.87%</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+               <div id="HorizontalChart"></div>
           </div>
       </div>
   </div>
@@ -372,7 +240,7 @@
     </div>
     <div class="col-md-9">
       <div class="chartContainer">
-        <svg class="chart"></svg> 
+        <div id="chart2"></div>
       </div>    
     </div>
   </div>
@@ -387,7 +255,7 @@
     </div>
     <div class="col-md-9">
         <div class="chartContainer">
-          <svg class="chart2"></svg> 
+          <div id="chart"></div>
         </div>       
     </div>
   </div>
@@ -425,8 +293,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" ></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js"></script> -->
+
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/custom.js"></script>
 
